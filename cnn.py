@@ -1,5 +1,4 @@
-#CNN Model to be ran on Google Colab,
-#Due to dependency on GPU Access
+#CNN Model depends on GPU access
 import math
 import numpy as np
 import h5py
@@ -12,6 +11,8 @@ import tensorflow as tf
 
 from tensorflow.python.framework import ops
 import cv2
+
+"""The following is GPU dependent"""
 device_name = tf.test.gpu_device_name()
 
 def create_data():

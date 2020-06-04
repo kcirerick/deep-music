@@ -1,5 +1,4 @@
-#CNN Model to be ran on Google Colab,
-#Due to dependency on GPU Access
+#CNN Model, GPU dependent
 import math
 import numpy as np
 import h5py

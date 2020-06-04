@@ -1,5 +1,5 @@
 from softmax.py import *
-#To be ran on google colab due to GPU dependencies
+#GPU dependent NN
 %tensorflow_version 1.x
 import tensorflow as tf
 import math

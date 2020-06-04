@@ -1,4 +1,4 @@
-#To be ran on google colab due to GPU dependencies
+#GPU dependent NN
 %tensorflow_version 1.x
 import tensorflow as tf
 import math
@@ -9,17 +9,18 @@ from tensorflow.python.framework import ops
 import cv2 
 
 """
-The following code is Google Colab dependent
+The following code is GPU dependent
 """
 
 device_name = tf.test.gpu_device_name()
 if device_name != '/device:GPU:0':
   raise SystemError('GPU device not found')
 
+"""
+The following code is Google Colab specific
 from google.colab import drive
 drive.mount('/content/drive')
 
-"""
 """
 
 def create_data():
