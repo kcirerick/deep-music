@@ -10,8 +10,7 @@ from tensorflow.python.framework import ops
 import cv2 
 
 """
-The following code is Google Colab dependent
-"""
+The following code is Google Colab specific
 
 device_name = tf.test.gpu_device_name()
 if device_name != '/device:GPU:0':
@@ -20,7 +19,6 @@ if device_name != '/device:GPU:0':
 from google.colab import drive
 drive.mount('/content/drive')
 
-"""
 """
 train_set_xx = shapes.T / 255
 train_set_yy = y.T
